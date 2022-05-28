@@ -27,20 +27,18 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public int inserisciNuovo(Televisore televisoreInput) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return televisoreDAO.insert(televisoreInput);
 	}
 
 	@Override
 	public List<Televisore> listaTuttiTelevisori() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		return televisoreDAO.list();
 	}
 
 	@Override
 	public int rimuovi(Long idDaEliminare) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		Televisore daEliminare = caricaSingoloTelevisore(idDaEliminare);
+		return televisoreDAO.delete(daEliminare);
 	}
 
 	@Override
