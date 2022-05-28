@@ -18,8 +18,8 @@ public class DB_Mock {
 		LISTA_TELEVISORI.add(new Televisore(3L, "ASUS", "X7B", 100, 20, "HNAI"));
 		LISTA_TELEVISORI.add(new Televisore(4L, "Bingo", "AAA7B", 300, 20, "LAMA"));
 		LISTA_TELEVISORI.add(new Televisore(5L, "SONY", "BSAB", 1000, 50, "n677BC"));
-		LISTA_TELEVISORI.add(new Televisore(1L, "BENQ", "RX-280X", 2678, 50, "SIUUUM"));
-		LISTA_TELEVISORI.add(new Televisore(1L, "LENOVO", "LE-980", 1000, 50, "rx-ac"));
+		LISTA_TELEVISORI.add(new Televisore(6L, "BENQ", "RX-280X", 2678, 50, "SIUUUM"));
+		LISTA_TELEVISORI.add(new Televisore(7L, "LENOVO", "LE-980", 1000, 50, "rx-ac"));
 	}
 
 	public static Long getNexIdAvailable() {

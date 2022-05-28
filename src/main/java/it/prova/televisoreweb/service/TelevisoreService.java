@@ -12,7 +12,7 @@ public interface TelevisoreService {
 
 	public List<Televisore> cercaPerMarcaEModello(String marcaInput, String modelloInput);
 	
-	public Televisore caricaSingoloTelevisore(Long idTelevisore);
+	public Televisore caricaSingoloTelevisore(Long idTelevisore) throws Exception;
 	
 	public int inserisciNuovo(Televisore televisoreInput) throws Exception;
 	

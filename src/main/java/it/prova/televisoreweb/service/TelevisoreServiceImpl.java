@@ -21,9 +21,8 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 	}
 
 	@Override
-	public Televisore caricaSingoloTelevisore(Long idTelevisore) {
-		// TODO Auto-generated method stub
-		return null;
+	public Televisore caricaSingoloTelevisore(Long idTelevisore) throws Exception {
+		return televisoreDAO.get(idTelevisore);
 	}
 
 	@Override
