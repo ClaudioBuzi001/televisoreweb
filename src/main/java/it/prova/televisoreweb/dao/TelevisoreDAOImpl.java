@@ -33,7 +33,20 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public int update(Televisore input) throws Exception {
-		// TODO Auto-generated method stub
+		//Trovo il Televsisore con lo stesso id di quello in input
+		
+			//Setto tutti  i parametri del Televisore Trovato con quelli del Tel in input
+		for(Televisore televisoreItem : DB_Mock.LISTA_TELEVISORI) {
+			if(televisoreItem.getIdTelevisore() == input.getIdTelevisore()) {
+				televisoreItem.setMarca(input.getMarca());
+				televisoreItem.setModello(input.getModello());
+				televisoreItem.setPrezzo(input.getPrezzo());
+				televisoreItem.setNumeroPollici(input.getNumeroPollici());
+				televisoreItem.setCodice(input.getCodice());
+				
+				return 1;
+			}
+		}
 		return 0;
 	}
 

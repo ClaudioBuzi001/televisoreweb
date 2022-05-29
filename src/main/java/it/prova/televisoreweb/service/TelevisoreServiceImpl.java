@@ -43,8 +43,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 
 	@Override
 	public int modifica(Televisore televisoreInput) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
+		return televisoreDAO.update(televisoreInput);
 	}
 
 }
